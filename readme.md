@@ -57,7 +57,7 @@ public void onCreate(Bundle savedInstanceState)
         setContentView(R.layout.filters); 
 
         //get reference to canvas
-        #canvas = findViewById(R.id.doodleCanvas);#
+        canvas = findViewById(R.id.doodleCanvas);
 }
 .
 .
