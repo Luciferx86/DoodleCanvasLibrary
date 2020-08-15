@@ -22,7 +22,13 @@ allprojects {
 Add this line in the build.gradle(app) file
 
 ```gradle
-implementation 'com.github.Luciferx86:DoodleCanvasLibrary:0.1.0-alpha3'
+dependencies {
+    .
+    .
+    implementation 'com.github.Luciferx86:DoodleCanvasLibrary:0.1.0-alpha3'
+    .
+    .
+}
 ```
 
 ## Use the DoodleCanvas View
