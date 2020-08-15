@@ -9,6 +9,81 @@
     <com.luciferx86.doodlecanvaslibrary.DoodleCanvas
         android:id="@+id/doodleCanvas"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/drawingOptionsLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_weight="5" />
+
+    <LinearLayout
+        android:id="@+id/drawingOptionsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/doodleCanvas"
+        app:layout_constraintVertical_weight="1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <View
+                android:id="@+id/greenButton"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/yellowButton"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="#00ff99"
+                android:background="@drawable/circle_shape"
+                />
+            <View
+                app:layout_constraintLeft_toRightOf="@id/greenButton"
+                app:layout_constraintRight_toLeftOf="@id/redButton"
+                android:id="@+id/yellowButton"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="#ffff00"
+                android:background="@drawable/circle_shape"
+                />
+            <View
+                app:layout_constraintLeft_toRightOf="@id/yellowButton"
+                app:layout_constraintRight_toLeftOf="@id/blueButton"
+                android:id="@+id/redButton"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="#ff0000"
+                android:background="@drawable/circle_shape"
+                />
+            <View
+                app:layout_constraintLeft_toRightOf="@id/redButton"
+                app:layout_constraintRight_toLeftOf="@id/pinkButton"
+                android:id="@+id/blueButton"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="#00c8ff"
+                android:background="@drawable/circle_shape"
+                />
+
+            <View
+                app:layout_constraintLeft_toRightOf="@id/blueButton"
+                app:layout_constraintRight_toRightOf="parent"
+                android:id="@+id/pinkButton"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="#f5b0e5"
+                android:background="@drawable/circle_shape"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <SeekBar
+            android:layout_marginTop="30dp"
+            android:id="@+id/slider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:valueFrom="10"
+            android:valueTo="100"/>
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
