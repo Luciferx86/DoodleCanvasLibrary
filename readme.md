@@ -102,7 +102,7 @@ canvas.undoMove();
 ### Enable Erasing
 
 ```java
-// simply sets the paint color to White, ehich acts as erasing 
+// simply sets the paint color to White, which acts as erasing 
 canvas.enableErasing();
 ```
 
@@ -119,6 +119,6 @@ canvas.enablePainting();
 ### Clear Out the canvas
 
 ```java
-// restores the last saved painting configuration
+// removes all paths on canvas
 canvas.clearCanvas();
 ```
