@@ -6,7 +6,8 @@ Every Action is performed nativley, so you can expect the best possible performa
 
 ## Add Library to Project:
 
-### 1.) Add the JitPack repository to your build.gradle(project) file
+### 1.) Add the JitPack repository to your project
+Add this line in the build.gradle(app) file
 
 ```gradle
 allprojects {
