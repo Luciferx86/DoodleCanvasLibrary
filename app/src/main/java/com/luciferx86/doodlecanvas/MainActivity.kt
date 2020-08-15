@@ -10,6 +10,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val canvas: DoodleCanvas = findViewById(R.id.doodleCanvas);
-        canvas.enablePainting();
+        canvas.setStrokeColor(Color.parseColor("#00ffbf"));
     }
 }

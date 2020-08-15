@@ -73,6 +73,8 @@ public void onCreate(Bundle savedInstanceState)
 
 ```java
 canvas.setStrokeColor(Color.GREEN);
+//set custom color
+canvas.setStrokeColor(Color.parseColor("#00ffbf"));
 ```
 
 
