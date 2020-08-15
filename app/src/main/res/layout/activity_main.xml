@@ -7,6 +7,7 @@
     tools:context=".MainActivity">
 
     <com.luciferx86.doodlecanvaslibrary.DoodleCanvas
+        android:id="@+id/doodleCanvas"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 

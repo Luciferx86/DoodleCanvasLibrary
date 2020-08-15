@@ -13,7 +13,7 @@ import android.view.View
 class DoodleCanvas(context: Context?, attrs: AttributeSet?) :
     View(context, attrs) {
 
-    var canDraw: Boolean = true;
+    private var canDraw: Boolean = true;
     private var mPaint: Paint = Paint()
     private var lastPaintStroke: Paint = Paint()
     private var mPath: SerializablePath
