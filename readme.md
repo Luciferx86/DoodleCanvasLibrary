@@ -10,11 +10,11 @@ Every Action is performed nativley, so you can expect the best possible performa
 
 ```gradle
 allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
+	repositories {
+		...
+		maven { url 'https://jitpack.io' }
 	}
+}
 ```
 
 ### 2.) Add the dependency in your project
