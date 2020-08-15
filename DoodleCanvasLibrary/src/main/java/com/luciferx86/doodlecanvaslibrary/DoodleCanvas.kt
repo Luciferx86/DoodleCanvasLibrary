@@ -117,36 +117,6 @@ class DoodleCanvas(context: Context?, attrs: AttributeSet?) :
         invalidate();
     }
 
-    class DataToDraw {
-        constructor() {
-            this.mode = "";
-            this.eventX = 0f;
-            this.eventY = 0f;
-            this.paintColor = Color.RED;
-            this.paintWidth = 10f
-        }
-
-        private val mode: String;
-        private val eventX: Float;
-        private val eventY: Float;
-        private val paintColor: Int;
-        private val paintWidth: Float
-
-        constructor(
-            mode: String,
-            eventX: Float,
-            eventY: Float,
-            paintColor: Int,
-            paintWidth: Float
-        ) {
-            this.mode = mode;
-            this.eventY = eventY;
-            this.eventX = eventX;
-            this.paintColor = paintColor;
-            this.paintWidth = paintWidth;
-        }
-    }
-
     fun canUserDraw(canDraw: Boolean) {
         this.canDraw = canDraw;
     }
